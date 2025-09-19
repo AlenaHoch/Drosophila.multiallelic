@@ -12,6 +12,7 @@ The shell script `run_extraction.sh` takes these modified `.bam`-files as input 
 A textfile with a list of the bam files and the `.fasta`-file of the *D. melanogaster* reference genome is necessary for this script.
 The file `run_extraction_coveragefilter.sh` does the same, but it uses customized filter settings based on the coverage of your sample instead of the FreeBayes default filter settings.
 The Python script `data_conversion.py` takes the textfile `filtered_sites.tsv` as input to calculate the number of sites and the number of alleles at those sites and save them in the output `pop_a_b_allelefreq.tsv`, where pop stands for your population, a for the threshold for hard filtering with the `min_reads` constant and b for the threshold for filtering with max_n_alleles. Those information, as well as the estimated generations for your population samples can be changed in the first lines of the script in the section "your settings".
+The script `count_alleles.py` loads `pop_a_b_allelefreq.tsv`, counts the frequency of loci with 3, 4, 5, ... alleles and outputs that in a new `.tsv`-file `n_alleles.tsv`.
 
 ### Genes
 The script `makebed.py` uses the file `pop_a_b_allelefreq.tsv` to generate a `.bed`-file `pop.bed`. The script `genefinder.py`can then take the `.bed`-file `pop.bed` together with a `.fasta`-file of the *D. melanogaster* reference genome and the corresponding gene annotation `.gff`-file to save the names of the genes that our loci are in in the `.txt`-file `genes_pop.txt`.
