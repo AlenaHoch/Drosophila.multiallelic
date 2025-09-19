@@ -2,7 +2,8 @@
 Scripts from project "Selection of multiallelic loci in *D. melanogaster*"
 
 ## Project description
-In this repository I collected the scripts used for my internship project about selection at multiallelic loci in Drosophila melanogaster. My project is based on the model developed by Nikolas Vellnow, Toni Goosmann and David Waxman. Their preprint can be found on bioRxiv: https://doi.org/10.1101/2024.11.08.622587
+In this repository I collected the scripts used for my internship project about selection at multiallelic loci in Drosophila melanogaster. My project is based on a model for mulitallelic selection developed by Nikolas Vellnow, Toni Goosmann and David Waxman. Their preprint can be found on bioRxiv: https://doi.org/10.1101/2024.11.08.622587
+Their model can estimate the matrix of fitnesses for a locus with multiple alleles, which they call F.
 Many of the scripts I used for my project are originally from Vellnow et al. I kept some of them as they are, changed some of them slightly, some of them more and created new scripts as well. You can find the orignal scripts used by Vellnow et al. in his Github repository: https://github.com/NikolasVellnow/selection_multiallelic
 We have used Matlab and Python to apply the model to empirical data from *D. melanogaster*.
 
