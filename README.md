@@ -24,6 +24,9 @@ With `proportions.py` you can calculate the proportion of DNA in genes in the ch
 The script `scan_dros_genome_F.m` takes a `.tsv`-file with trajectory data across many loci, e.g. `pop_a_b_allelefreq.tsv`, estimates F for each window and saves the information in a `.mat`-file `F_results.mat`. The script calls the functions `fit_F_sparse_func.m`, with its dependencies. Also, the "Optimization Toolbox" and the "Global Optimization Toolbox" for Matlab have to be installed to use this script.
 The script `scan_dros_genome_analysis.m` then takes the estimated F matrices `F_results.mat`, analyses them (e.g. it calculates a value to measure the strength of heterozygous advantage which we called hav1) and outputs the results in a `.mat`-file `F_analysis_results.mat`. The script calls function `convert_F_to_w.m`
 
+#### Comparing the costs
+The script `sum_costs.m` calculates the average estimation costs for triallelic loci, which I used as a reference. Of course the script can easily be changed to calculate the average of costs of loci with 4 alleles for example.
+
 #### Manhattan Plots
 The script `manhattan_plot.m` takes `F_analysis_results.mat` to create manhattan plots for the strength of heterozygous advantage based on the value hav1. It also displays the quantiles of hav1.
 
